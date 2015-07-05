@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/earthbg">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +14,8 @@
         android:id="@+id/txtInstructions"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp" />
+        android:layout_marginTop="64dp"
+        android:background="#AAFFFFFF" />
 
     <Button
         android:layout_width="wrap_content"
@@ -22,5 +24,6 @@
         android:id="@+id/btnPlay"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:onClick="playGame" />
+        android:onClick="playGame"
+        android:background="#AAFFFFFF" />
 </RelativeLayout>

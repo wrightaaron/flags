@@ -1,17 +1,22 @@
 package com.example.thewrights.flag_quiz;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class FinalScreen extends ActionBarActivity {
 
-    @Override
+    TextView txtScore;
+    String score = Integer.toString(Game.numRight);
+    String possible = Integer.toString(Game.numRounds);
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_screen);
+        txtScore = (TextView)findViewById(R.id.txtDisplayScore);
+        txtScore.setText(score + "/" + possible);
     }
 
     @Override

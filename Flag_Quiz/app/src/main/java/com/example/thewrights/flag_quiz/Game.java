@@ -1,6 +1,7 @@
 package com.example.thewrights.flag_quiz;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -20,9 +21,9 @@ public class Game extends ActionBarActivity {
     ImageView image;
     ListView listOptions;
     int round;
-    int numRounds;
+    public static int numRounds;
     int correctIndex;
-    int numRight;
+    public static int numRight;
     //String[] choices = {"Australia", "Barbados", "Brazil", "Canada", "Cuba", "Germany", "France", "Great Britain", "Italy", "Sweden"};
     //int[] images = {R.drawable.au, R.drawable.bb, R.drawable.br, R.drawable.ca, R.drawable.cu, R.drawable.de, R.drawable.fr, R.drawable.gb, R.drawable.it, R.drawable.se};
     ArrayList<String> choiceList;
@@ -89,10 +90,17 @@ public class Game extends ActionBarActivity {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                 {
+                    MediaPlayer mp;
                     if(position == correctIndex)
                     {
+                        mp = MediaPlayer.create(Game.this, R.raw.right);
                         numRight++;
                     }
+                    else
+                    {
+                        mp = MediaPlayer.create(Game.this, R.raw.wrong);
+                    }
+                    mp.start();
                     playRound();
                 }
             });

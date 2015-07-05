@@ -4,9 +4,36 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.thewrights.flag_quiz.FinalScreen">
+    tools:context="com.example.thewrights.flag_quiz.FinalScreen"
+    android:background="@drawable/earthbg">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You got"
+        android:id="@+id/txtScore1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="#AAFFFFFF" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtDisplayScore"
+        android:layout_below="@+id/txtScore1"
+        android:layout_centerHorizontal="true"
+        android:background="#AAFFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Correct"
+        android:id="@+id/txtScore2"
+        android:layout_below="@+id/txtDisplayScore"
+        android:layout_centerHorizontal="true"
+        android:background="#AAFFFFFF" />
 </RelativeLayout>
