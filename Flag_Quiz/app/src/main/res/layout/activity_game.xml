@@ -5,12 +5,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.thewrights.flag_quiz.Game"
-    android:background="@drawable/earthbg">
+    android:background="@drawable/earthbg"
+    android:id="@+id/relLayout">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imgFlag"
+        android:background="#AAFFFFFF"
+        android:padding="2dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -18,7 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lstOptions"
+        android:background="#AAFFFFFF"
         android:layout_below="@+id/imgFlag"
         android:layout_alignParentRight="true"
-        android:background="#AAFFFFFF" />
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
