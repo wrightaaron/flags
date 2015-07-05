@@ -123,8 +123,14 @@ public class Game extends ActionBarActivity {
         list.add("Germany");
         list.add("France");
         list.add("Great Britain");
+        list.add("Israel");
         list.add("Italy");
+        list.add("Jamaica");
+        list.add("Japan");
+        list.add("Korea");
+        list.add("Mexico");
         list.add("Sweden");
+        list.add("Turkey");
         return list;
     }
 
@@ -153,8 +159,14 @@ public class Game extends ActionBarActivity {
         list.add(R.drawable.de);
         list.add(R.drawable.fr);
         list.add(R.drawable.gb);
+        list.add(R.drawable.il);
         list.add(R.drawable.it);
+        list.add(R.drawable.jm);
+        list.add(R.drawable.jp);
+        list.add(R.drawable.kr);
+        list.add(R.drawable.mx);
         list.add(R.drawable.se);
+        list.add(R.drawable.tr);
         return list;
     }
 
@@ -190,10 +202,22 @@ public class Game extends ActionBarActivity {
                 return choiceList.indexOf("France");
             case R.drawable.gb:
                 return choiceList.indexOf("Great Britain");
+            case R.drawable.il:
+                return choiceList.indexOf("Israel");
             case R.drawable.it:
                 return choiceList.indexOf("Italy");
+            case R.drawable.jm:
+                return choiceList.indexOf("Jamaica");
+            case R.drawable.jp:
+                return choiceList.indexOf("Japan");
+            case R.drawable.kr:
+                return choiceList.indexOf("Korea");
+            case R.drawable.mx:
+                return choiceList.indexOf("Mexico");
             case R.drawable.se:
                 return choiceList.indexOf("Sweden");
+            case R.drawable.tr:
+                return choiceList.indexOf("Turkey");
             default:
                 return -1;
         }
